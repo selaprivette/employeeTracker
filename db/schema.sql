@@ -1,18 +1,21 @@
-DROP DATABASE IF EXISTS _____ 
-CREATE DATABASE _____
-department:
-id: INT PRIMARY KEY
-name: VARCHAR(30)
+DROP DATABASE IF EXISTS employees; 
+CREATE DATABASE employees;
 
-role:
-id: INT PRIMARY KEY
-title: VARCHAR(30)
-salary: DECIMAL
+CREATE TABLE departments(
+id: INT PRIMARY KEY AUTO_INCREMENT
+name: VARCHAR(30) NOT NULL
+);
+CREATE TABLE role(
+id: INT PRIMARY KEY AUTO_INCREMENT 
+title: VARCHAR(30) NOT NULL 
+salary: DECIMAL (10, 2) NOT NULL 
 department_id: INT
+);
 
-employee:
+CREATE TABLE employee(
 id: INT PRIMARY KEY
-first_name: VARCHAR(30)
-last_name: VARCHAR(30)
+first_name: VARCHAR(30) NOT NULL
+last_name: VARCHAR(30) NOT NULL 
 role_id: INT
 manager_id: INT
+);
