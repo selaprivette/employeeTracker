@@ -25,6 +25,18 @@ const displayMenu = async() => {
     if(userSelection.menuSelection == 'view-all-dept') {
         functions.viewAllDepartments(database);  
     }
+    if(userSelection.menuSelection == 'view-all-roles') {
+        functions.viewAllRoles(database);  
+    }
+    if(userSelection.menuSelection == 'add-a-department') {
+        functions.addDepartment(database, userSelection.departmentName);  
+    }
+    if(userSelection.menuSelection == 'add-a-role') {
+        functions.addRole(database, userSelection.roleTitle, userSelection.roleSalary, userSelection.roleID);  
+    }
+    if(userSelection.menuSelection == 'add-an-employee') {
+        functions.addEmployee(database, userSelection.employeeFirstName, userSelection.employeeLastName, userSelection.employeeRoleID, userSelection.employeeManagerID);  
+    }
 
 
 }
