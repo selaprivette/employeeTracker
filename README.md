@@ -11,8 +11,8 @@ This is a command line application that helps an employer keep track of their te
 
 
 ## Visuals
-![Employee Tracker](./img/employeeTracker.png)
-![Video] ()
+![Employee Tracker](/img/employeeTracker.png)
+![Video] (/img/employeeTrackerDemo.mp4)
 
 
 
