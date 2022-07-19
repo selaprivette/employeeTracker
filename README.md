@@ -17,5 +17,5 @@ This is a command line application that helps an employer keep track of their te
 
 
 ## Resources
-- [VideoLink] (https://drive.google.com/file/d/1yn32sjXkfz7XJJb_mgmTfjzuPqcjTp3_/view)
+- [VideoLink](https://drive.google.com/file/d/1yn32sjXkfz7XJJb_mgmTfjzuPqcjTp3_/view)
 - [Repository](https://github.com/selaprivette/employeeTracker)
