@@ -36,6 +36,11 @@ const addEmployee = (db, first_name, last_name, role_id, manager_id) => {
         if (err) return console.error(err);
     });
 } 
+const updateEmployeeRole = (db, employee_id, role_id) => {
+    db.query("update employee set role_id="+role_id+" where id="+employee_id, function (err, results) {
+        if (err) return console.error(err);
+    });
+} 
 
 
 
@@ -47,5 +52,6 @@ module.exports = {
     viewAllRoles,
     addDepartment,
     addRole,
-    addEmployee
+    addEmployee,
+    updateEmployeeRole
 }

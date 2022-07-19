@@ -18,7 +18,7 @@ const init = () => {
  
 const displayMenu = async() => {
     const userSelection = await prompt(menu.menu)
-    console.log(userSelection.menuSelection);
+
     if(userSelection.menuSelection == 'view-all-employees') {
         functions.viewAllEmployees(database);  
     }
@@ -36,6 +36,14 @@ const displayMenu = async() => {
     }
     if(userSelection.menuSelection == 'add-an-employee') {
         functions.addEmployee(database, userSelection.employeeFirstName, userSelection.employeeLastName, userSelection.employeeRoleID, userSelection.employeeManagerID);  
+    }
+    if(userSelection.menuSelection == 'update-employee-role') {
+        functions.updateEmployeeRole(database, userSelection.employeeID, userSelection.newEmployeeRoleID);  
+    }
+    if(userSelection.menuSelection != 'exit') {
+        displayMenu();
+    } else {
+        process.exit();
     }
 
 

@@ -60,6 +60,18 @@ const menu = [
         message: "What is the employee's manager id?",
         name: "employeeManagerID",
         when: (answers) => answers.menuSelection == "add-an-employee",
+      },
+      {
+        type: "input",
+        message: "What is the employee's id?",
+        name: "employeeID",
+        when: (answers) => answers.menuSelection == "update-employee-role",
+      },
+      {
+        type: "input",
+        message: "What is the employee's new role id?",
+        name: "newEmployeeRoleID",
+        when: (answers) => answers.menuSelection == "update-employee-role",
       }
   ]
   
